@@ -67,7 +67,7 @@ redirect_url | 必    | 跟 (A) 一樣是https://developers.google.com/oauthplay
 client_id    | 必    | amazingtalker
 client_secret| 必    | amazingtalker-secret
 
-    POST /token HTTP/1.1
+    POST /oauth/v1.0/token HTTP/1.1
     Host: 34.80.244.232
     Content-Type: application/x-www-form-urlencoded
 
