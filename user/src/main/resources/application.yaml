@@ -1,0 +1,33 @@
+### 專案設定檔
+
+## actuator : 對應用程式進行監控跟管理
+management:
+  server:
+    port: 10302 # 管理 actuator port
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+    security:
+      enabled: false
+    health:
+      sensitive: false
+      show-details: always
+
+## tomcat相關設定
+server:
+  port: 8092
+  error:
+    whitelabel.enabled: false
+  servlet.session.timeout: 1m
+  tomcat:
+    accept-count: 200
+    max-threads: 20000
+    remote-ip-header: X-Forwarded-Proto
+    accesslog:
+      pattern: "%{X-Forwarded-For}i %h %l %u %t %r %s %b %D"
+      enabled: true
+      file-date-format: .yyyy-MM-dd_HH

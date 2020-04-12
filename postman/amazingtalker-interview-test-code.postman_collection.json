@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "d0a22aa1-f116-48f0-aa52-40fa2bdd89ae",
+		"name": "amazingtalker-interview-test-code",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得access_token的API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "IE5hrUw70E2a5YRB3SCP87uzGBpVDYT2",
+							"type": "text"
+						},
+						{
+							"key": "redirect_url",
+							"value": "https://developers.google.com/oauthplayground",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "amazingtalker",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "amazingtalker-secret",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://34.80.244.232/oauth/v1.0/token",
+					"protocol": "http",
+					"host": [
+						"34",
+						"80",
+						"244",
+						"232"
+					],
+					"path": [
+						"oauth",
+						"v1.0",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得 leetcode 題目 alphabet-Board-Path 的解答",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer a155ee69-0ea8-4d00-89c3-acd828721a07",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "34.80.244.232/leetcode/v1.0/alphabet-Board-Path?target=leetcode",
+					"host": [
+						"34",
+						"80",
+						"244",
+						"232"
+					],
+					"path": [
+						"leetcode",
+						"v1.0",
+						"alphabet-Board-Path"
+					],
+					"query": [
+						{
+							"key": "target",
+							"value": "leetcode"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
