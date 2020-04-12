@@ -50,11 +50,9 @@
 ## 操作步驟如下
 
 + (A)  使用瀏覽器call以下網址 http://34.80.244.232/oauth/v1.0/authorization?client_id=amazingtalker&response_type=code&redirect_url=https://developers.google.com/oauthplayground&state=
-<BR></BR>
 + (B) 輸入帳號密碼 amazingtalker/12345
 <img src="./img/login_page.png" style="zoom:80%" />
 + (C) 瀏覽器會redirect到(A)填的redirect_url，並且帶上code，把他複製下來，如下圖
-<BR></BR>
 <img src="./img/Authorization_Code.png" style="zoom:80%" />
 + (D) 使用code去換access token，參考下方圖
 
