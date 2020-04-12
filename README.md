@@ -56,7 +56,6 @@
 + (C) 瀏覽器會redirect到(A)填的redirect_url，並且帶上code，把他複製下來，如下圖
 <BR></BR>
 <img src="./img/Authorization_Code.png" style="zoom:80%" />
-<BR></BR>
 + (D) 使用code去換access token，參考下方圖
 
 
