@@ -49,15 +49,15 @@
 
 ## 操作步驟如下
 
-+ 1. (A)  使用瀏覽器call以下網址 http://34.80.244.232/oauth/v1.0/authorization?client_id=amazingtalker&response_type=code&redirect_url=https://developers.google.com/oauthplayground&state=
++ (A)  使用瀏覽器call以下網址 http://34.80.244.232/oauth/v1.0/authorization?client_id=amazingtalker&response_type=code&redirect_url=https://developers.google.com/oauthplayground&state=
 <BR></BR>
-+ 2. (B) 輸入帳號密碼 amazingtalker/12345
++ (B) 輸入帳號密碼 amazingtalker/12345
 <img src="./img/login_page.png" style="zoom:80%" />
-+ 3. (C) 瀏覽器會redirect到(A)填的redirect_url，並且帶上code，把他複製下來，如下圖
++ (C) 瀏覽器會redirect到(A)填的redirect_url，並且帶上code，把他複製下來，如下圖
 <BR></BR>
 <img src="./img/Authorization_Code.png" style="zoom:80%" />
 <BR></BR>
-+ 4. (D) 使用code去換access token，參考下方圖
++ (D) 使用code去換access token，參考下方圖
 
 
 參數名       | 必/選	| 填什麼 
@@ -78,7 +78,7 @@ client_secret| 必    | amazingtalker-secret
     &client_id=amazingtalker
     &client_secret=amazingtalker-secret
 
-+ 5. (E) Authorization Server會返回access_token跟refresh_token
++ (E) Authorization Server會返回access_token跟refresh_token
 
 如下
 
@@ -95,7 +95,7 @@ client_secret| 必    | amazingtalker-secret
       "additionalInformation": {}
     }
 
-+ 6. (F) 將在 (E) 步驟拿到的access_token夾帶在header call leet API Server
++ (F) 將在 (E) 步驟拿到的access_token夾帶在header call leet API Server
 
 參數名       | 必/選	| 填什麼 
 -------------|-------|--------------------------------------------
@@ -106,7 +106,7 @@ code         | 必    | 在 (E) 拿到的 access_token
     Host: 34.80.244.232
     Authorization: Bearer 3dfc5073-ef78-4ba2-970a-d8febcc61011
 
-+ 7. (G) 返回alphabet-Board-Path的解答
++ (G) 返回alphabet-Board-Path的解答
 
 <BR></BR>
 [這個專案的 GitHub 網址](https://github.com/powerbenson/oauth-server-simple-example)
