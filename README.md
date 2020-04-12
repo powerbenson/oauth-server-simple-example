@@ -109,4 +109,4 @@ code         | 必    | 在 (E) 拿到的 access_token
 + 7. (G) 返回alphabet-Board-Path的解答
 
 <BR></BR>
-[這個專案的 GitHub 網址](https://github.com/powerbenson/oauth-server-example)
+[這個專案的 GitHub 網址](https://github.com/powerbenson/oauth-server-simple-example)
