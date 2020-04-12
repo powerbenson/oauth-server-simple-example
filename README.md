@@ -40,7 +40,7 @@
 
 ## 目錄結構
 
-+ leetcode -> leet code API Server 程式碼 (透過call api 拿到解答，但在這之前要先拿到access_token)
++ leetcode -> leet code API Server 程式碼 (透過call api 拿到解答，但在這之前要先拿到access_token)，解答程式碼檔案的路徑為 /leetcode/src/main/java/tw/idb/leetcode/service/AlphabetBoardPath.java
 + oauth -> Authorization Server 程式碼 (對Client進行認證，已經幫amaingtalker註冊了，client_id=amazingtalker、client_secret=amazingtalker-secret)
 + user -> User Server 程式碼 (對帳號密碼進行認證)
 + img -> img (放README.md的圖)
