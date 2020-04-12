@@ -1,4 +1,4 @@
-# Oauth 2.0 Authorization Server 範例說明
+# Oauth 2.0 Authorization Server 簡單範例說明
 
 ## Authorization Code Grant
 
